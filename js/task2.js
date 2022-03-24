@@ -3,10 +3,12 @@ function averageNum() {
     let number = numberList.split(' ');
     let arr_numbers = [];
     let sum = 0;
+    let result;
     for (i = 0; i < number.length; i++) {
         arr_numbers.push(Number(number[i]));
         sum += arr_numbers[i];
     }
-    console.log(sum / arr_numbers.length);
+    result = sum / arr_numbers.length
+    console.log(result);
 }
 averageNum();
